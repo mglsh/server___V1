@@ -1,6 +1,6 @@
 var express         = require('express');
 var path            = require('path'); // модуль для парсинга пути
-var log             = require('./libs/log')(module);
+//var log             = require('./libs/log')(module);
 var app = express();
 
 app.use(express.favicon()); // отдаем стандартную фавиконку, можем здесь же свою задать
@@ -15,5 +15,5 @@ app.get('/api', function (req, res) {
 });
 
 app.listen(1337, function(){
-    log.info('Express server listening on port 1337');
+    //log.info('Express server listening on port 1337');
 });
